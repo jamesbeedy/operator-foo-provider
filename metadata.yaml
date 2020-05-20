@@ -1,0 +1,14 @@
+name: foo-provider
+summary: Testing relations
+maintainers:
+    - James Beedy <jamesbeedy@gmail.com>
+description: |
+    Testing relations
+tags:
+    - test
+    - operator
+series:
+    - focal
+provides:
+  foo:
+    interface: interface-foo-bar
