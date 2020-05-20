@@ -30,13 +30,13 @@ class FooProviderCharm(CharmBase):
 
         self.foo = FooProvides(self, "foo")
 
-        self.framework.observe(self.on.start, self.on_start)
-        self.framework.observe(self.on.install, self.on_install)
+        self.framework.observe(self.on.start, self._on_start)
+        self.framework.observe(self.on.install, self._on_install)
 
-    def on_install(self, event):
+    def _on_install(self, event):
         pass
 
-    def on_start(self, event):
+    def _on_start(self, event):
         pass
 
 
